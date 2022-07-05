@@ -1,0 +1,110 @@
+*{
+    padding:0;
+    margin:0;
+}
+nav{
+    width: 100%;
+    background-color: rgb(242, 244, 247);
+    line-height: 2;
+}
+.logo{
+    width:20%;
+    padding-left: 8vw;
+    padding-right: 20vw;
+    display: inline;
+}
+.logo h1{
+    font-family: cursive;
+    display: inline;
+}
+#sub{
+    color: rgb(19, 121, 238);
+}
+.links{
+    display: inline;
+    width:70%;
+}
+.links ul{
+    list-style-type: none;
+    display: inline;
+}
+.links ul li{
+    padding:0 2vw;
+    font-size: 2vw;
+    display: inline;
+
+}
+.display{
+    display: block;
+}
+.links ul li:hover{
+color: rgb(19, 121, 238);
+padding-left: .1wv;
+cursor: pointer;
+}
+.toggle{
+    width: 10%;
+    display: inline;
+
+}
+.toggle i{
+    font-size: 2vw;
+    padding:1vw;
+    padding-top: 1.3vw;
+    display: none;
+
+}
+.toggle i:hover{
+    cursor: pointer;
+    color: teal;
+}
+
+@media only screen and (max-width:600px){
+    
+    .links ul li{
+        display: block;
+        padding:7px;
+        padding-top: 10px;
+        color: turquoise;
+        padding-left: 20px;
+        font-size: 20px;
+    }
+    .toggle i {
+        position: relative;
+        display: inline-block;
+        right:-130px;
+        font-size: 17px;
+    }
+    .toggle{
+        position: relative;
+    }
+    .links{
+        position: absolute;
+        display: none;
+        right: 0;
+        width:100%;
+        top: 0;
+        background-color: rgb(240, 245, 252);
+    }
+    .links ul{
+        display: block;
+        width: 100%;
+        display: block;
+    }
+    
+}
+
+@media only screen and (min-width:600px) {
+    
+    .links{
+        display: inline !important;
+        
+    }
+    .links ul{
+        display: inline;
+        
+    }
+    .links ul li{
+        display: inline;}  
+
+}
